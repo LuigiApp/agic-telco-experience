@@ -1,1 +1,110 @@
-<!DOCTYPE html><html lang="it"><head><meta charset="UTF-8"><<script>window.onerror=function(m){document.title='ERR:'+m;};</script></script>meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AGIC | Telco Industry Experience</title><meta name="description" content="Competenza AGIC nel settore Telco su tecnologie Microsoft, Copilot e AI."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><a class="brand" href="#top"><span>AGIC</span></a><div class="tagline">Amplify the future</div></header><section class="hero" id="top"><div class="eyebrow">Industry Experience &middot; Telco</div><h1>Competenza AGIC nel mondo <span class="grad">Telco</span>, potenziata da Microsoft Copilot e AI</h1><p>Da anni affianchiamo i principali operatori di telecomunicazioni italiani nella trasformazione digitale di BSS, ERP, CRM e processi commerciali, con la piattaforma Microsoft come motore dell'innovazione e l'AI generativa e Copilot come acceleratori di produttivita.</p><div class="cta-row"><a class="btn btn-primary" href="#clienti">Scopri le esperienze</a><a class="btn btn-secondary" href="mailto:luigi.muoio@agic.it">Contatta AGIC</a></div></section><section id="ai"><h2 class="section-title">AI e Copilot al centro dell'execution</h2><p class="section-sub">In ogni progetto Telco, AGIC integra le tecnologie Microsoft con funzionalita di Intelligenza Artificiale e Copilot per accelerare i processi di business, il customer care e le decisioni.</p><div class="ai-strip"><div class="ai-pill"><span class="dot"></span>Microsoft Copilot per il Customer Care</div><div class="ai-pill"><span class="dot"></span>Azure AI &amp; Cognitive Services</div><div class="ai-pill"><span class="dot"></span>Automazione intelligente dei processi (RPA + AI)</div><div class="ai-pill"><span class="dot"></span>Dynamics 365 &amp; Power Platform</div></div></section><section id="clienti"><h2 class="section-title">Le nostre esperienze Telco</h2><p class="section-sub">Sette operatori di telecomunicazioni che hanno scelto AGIC per evolvere i propri processi con le tecnologie Microsoft.</p><div class="grid" id="clients-grid"><p>Caricamento contenuti...</p></div></section><footer><p>&copy; <span id="year"></span> AGIC Technology &mdash; Amplify the future. Contenuti gestibili via <a href="admin/index.html">CMS interno</a>.</p></footer><script>document.getElementById('year').textContent = new Date().getFullYear();fetch('+'?v='+Date.now()).then(r=>r.json()).then(clients=>{const grid=document.getElementById('clients-grid');grid.innerHTML='';clients.forEach(c=>{const initials=c.nome.split(' ').map(w=>w[0]).slice(0,2).join('').toUpperCase();const tags=(c.tecnologie||[]).map(t=>`<span class="tag">${t}</span>`).join('');const note=c.note?`<p class="note">${c.note}</p>`:'';var card=document.createElement('article');card.className='card';var h='<h3>'+c.nome+'</h3>';h+='<p class="label">Cosa fa</p><p>'+c.cosa_fa+'</p>';h+='<p class="label">Cosa ha fatto AGIC</p>';h+='<div class="tags">'+tags+'</div>';h+='<p class="label">Valore creato</p>';h+='<p>'+c.valore+'</p>'+note;h+='<a class="card-link" href="'+c.sito+'" target="_blank" rel="noopener">Visita il sito</a>';card.innerHTML=h;grid.appendChild(card);});}).catch(function(e){console.error(e);});</script></body></html>html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AGIC | Telco Industry Experience</title>
+<meta name="description" content="Competenza AGIC nel settore Telco su tecnologie Microsoft, Copilot e AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top">AGIC <span class="tagline">Amplify the future.</span></a>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="#clienti">Scopri le esperienze</a>
+    <a class="btn btn-secondary" href="mailto:luigi.muoio@agic.it">Contatta AGIC</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="eyebrow">Industry Experience &middot; Telco</div>
+  <h1>Competenza AGIC nel mondo <span class="grad">Telco</span>, potenziata da Microsoft, Copilot e AI</h1>
+  <p>Da anni affianchiamo i principali operatori di telecomunicazioni italiane nella trasformazione digitale di BSS, ERP, CRM e processi commerciali, con la piattaforma Microsoft come motore dell'innovazione e l'AI generativa e Copilot come acceleratori di produttività.</p>
+</section>
+
+<section id="ai">
+  <h2 class="section-title">AI e Copilot al centro dell'execution</h2>
+  <p class="section-sub">In ogni progetto Telco, AGIC integra le tecnologie di Intelligenza Artificiale e Copilot per accelerare i processi di business, il customer care e le decisioni.</p>
+  <div class="ai-strip">
+    <div class="ai-pill"><span class="dot"></span>Microsoft Copilot per il Customer Care</div>
+    <div class="ai-pill"><span class="dot"></span>Azure AI &amp; Cognitive Services</div>
+    <div class="ai-pill"><span class="dot"></span>Automazione intelligente dei processi (RPA + AI)</div>
+    <div class="ai-pill"><span class="dot"></span>Dynamics 365 &amp; Power Platform</div>
+  </div>
+</section>
+
+<section id="clienti">
+  <h2 class="section-title">Le nostre esperienze Telco</h2>
+  <p class="section-sub">Operatori di telecomunicazioni che hanno scelto AGIC per evolvere i propri processi con le tecnologie Microsoft.</p>
+  <div class="grid" id="clients-grid"><p class="loading">Caricamento contenuti...</p></div>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> AGIC Technology &mdash; Amplify the future. Contenuti gestibili via <a href="admin/index.html">CMS interno</a>.</p>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+fetch('data/clients.json')
+  .then(function (r) { return r.json(); })
+  .then(function (data) {
+    var clients = data.clients || data;
+    var grid = document.getElementById('clients-grid');
+    grid.innerHTML = '';
+    clients.forEach(function (c) {
+      var initials = (c.nome || '')
+        .split(' ')
+        .map(function (w) { return w[0]; })
+        .slice(0, 2)
+        .join('')
+        .toUpperCase();
+
+      var tags = (c.tecnologie || [])
+        .map(function (t) { return '<span class="tag">' + t + '</span>'; })
+        .join('');
+
+      var note = c.note ? '<p class="note">' + c.note + '</p>' : '';
+      var stato = c.stato_contenuto === 'da_confermare'
+        ? '<span class="status status-pending">Da confermare</span>'
+        : '<span class="status status-ok">Verificato</span>';
+
+      var card = document.createElement('article');
+      card.className = 'card';
+
+      var html = '';
+      html += '<div class="card-head">';
+      html += '<div class="badge">';
+      if (c.logo) {
+        html += '<img src="' + c.logo + '" alt="Logo ' + c.nome + '" onerror="this.remove()">';
+      }
+      html += '<span class="badge-fallback">' + initials + '</span>';
+      html += '</div>';
+      html += '<div><h3>' + c.nome + '</h3>' + stato + '</div>';
+      html += '</div>';
+      html += '<p class="label">Chi &egrave;</p>';
+      html += '<p>' + c.cosa_fa + '</p>';
+      html += '<p class="label">Attivit&agrave; AGIC</p>';
+      html += '<p>' + (c.cosa_ha_fatto_agic || '') + '</p>';
+      if (tags) {
+        html += '<p class="label">Tecnologie</p>';
+        html += '<div class="tags">' + tags + '</div>';
+      }
+      html += '<p class="label">Valore creato</p>';
+      html += '<p>' + c.valore + '</p>';
+      html += note;
+      html += '<p class="card-link"><a href="' + c.sito + '" target="_blank" rel="noopener">Visita il sito &rarr;</a></p>';
+
+      card.innerHTML = html;
+      grid.appendChild(card);
+    });
+  })
+  .catch(function (e) {
+    console.error(e);
+    document.getElementById('clients-grid').innerHTML = '<p>Impossibile caricare i contenuti dei clienti.</p>';
+  });
+</script>
+</body>
+</html>
